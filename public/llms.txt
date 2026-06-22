@@ -7,49 +7,49 @@
 ## Pages
 
 ### בית
-https://example.com
+https://merkaz-hahipuyim-lior-design.zappy5.app
 מחפשים חיפויים לבתים שישדרגו כל פינה? במרכז החיפויים ליאור דיזיין תגלו לוחות PVC, טפטים יוקרתיים ופתרונות עיצוב שיכניסו חיים חדשים לבית. כנסו עכשיו ותתאהבו!
 
 ### שירותים
-https://example.com/services
+https://merkaz-hahipuyim-lior-design.zappy5.app/services
 ציפוי לדלת, טפט לדלת, לוח PVC דמוי שיש ופרקטים – גלו את מגוון השירותים שלנו להתאמת משטחים מושלמת. הפיכת הבית ליצירת אמנות מתחילה כאן, עם ייעוץ מקצועי וליווי צמוד.
 
 ### אודות
-https://example.com/about
+https://merkaz-hahipuyim-lior-design.zappy5.app/about
 מרכז החיפויים ליאור דיזיין נולד מאהבה לחומרים משובחים ולעיצוב פורץ דרך. אנחנו מביאים ניסיון עשיר בלוחות PVC, סרגלים פולימריים לקירות ופתרונות גימור שהופכים בתים לחללים מעוררי השראה.
 
 ### צור קשר
-https://example.com/contact
+https://merkaz-hahipuyim-lior-design.zappy5.app/contact
 מוכנים לצעד הבא בעיצוב הבית? צרו קשר עם מרכז החיפויים ליאור דיזיין לייעוץ אישי על חיפויים לבתים, טפטים ופתרונות גימור. השאירו פרטים ונחזור אליכם עם הצעה שאי אפשר לסרב לה!
 
 ### Products
-https://example.com/products
+https://merkaz-hahipuyim-lior-design.zappy5.app/products
 המוצרים שלנו - מרכז החיפויים ליאור דיזיין
 
 ### Product Detail
-https://example.com/product/:slug
+https://merkaz-hahipuyim-lior-design.zappy5.app/product/:slug
 פרטי המוצר - מרכז החיפויים ליאור דיזיין
 
 ### Category
-https://example.com/category/:slug
+https://merkaz-hahipuyim-lior-design.zappy5.app/category/:slug
 מוצרים - מרכז החיפויים ליאור דיזיין
 
 ### תודה על פנייתך | מרכז החיפויים ליאור דיזיין
-https://example.com/thank-you
+https://merkaz-hahipuyim-lior-design.zappy5.app/thank-you
 מרכז החיפויים ליאור דיזיין - תודה על פנייתך | מרכז החיפויים ליאור דיזיין
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://example.com/privacy
+https://merkaz-hahipuyim-lior-design.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://example.com/terms
+https://merkaz-hahipuyim-lior-design.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://example.com/accessibility
+https://merkaz-hahipuyim-lior-design.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -89,8 +89,8 @@ Interior Design & Home Decor
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://example.com/sitemap.xml
-- Robots: https://example.com/robots.txt
-- Flattened page text (for LLMs): https://example.com/llms-full.txt
-- Products (JSON): https://example.com/products.json
-- Products (Google Merchant RSS): https://example.com/product-feed.xml
+- Sitemap (XML): https://merkaz-hahipuyim-lior-design.zappy5.app/sitemap.xml
+- Robots: https://merkaz-hahipuyim-lior-design.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://merkaz-hahipuyim-lior-design.zappy5.app/llms-full.txt
+- Products (JSON): https://merkaz-hahipuyim-lior-design.zappy5.app/products.json
+- Products (Google Merchant RSS): https://merkaz-hahipuyim-lior-design.zappy5.app/product-feed.xml
