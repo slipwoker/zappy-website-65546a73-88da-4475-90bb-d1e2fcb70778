@@ -1,0 +1,96 @@
+# מרכז החיפויים ליאור דיזיין — Generative Engine Optimization Map
+
+> Lior Design Center is a home decor and interior finishing business specializing in wall cladding, door and cabinet wraps/wallpapers, and flooring (parquet). The brand carries a design-forward identity with a focus on transforming interior spaces through premium surface materials. The business name suggests a personal brand with a design-oriented vision, likely serving homeowners, contractors, and interior designers.
+
+---
+
+## Pages
+
+### בית
+https://-65546a73.zappy5.app
+מחפשים חיפויים לבתים שישדרגו כל פינה? במרכז החיפויים ליאור דיזיין תגלו לוחות PVC, טפטים יוקרתיים ופתרונות עיצוב שיכניסו חיים חדשים לבית. כנסו עכשיו ותתאהבו!
+
+### שירותים
+https://-65546a73.zappy5.app/services
+ציפוי לדלת, טפט לדלת, לוח PVC דמוי שיש ופרקטים – גלו את מגוון השירותים שלנו להתאמת משטחים מושלמת. הפיכת הבית ליצירת אמנות מתחילה כאן, עם ייעוץ מקצועי וליווי צמוד.
+
+### אודות
+https://-65546a73.zappy5.app/about
+מרכז החיפויים ליאור דיזיין נולד מאהבה לחומרים משובחים ולעיצוב פורץ דרך. אנחנו מביאים ניסיון עשיר בלוחות PVC, סרגלים פולימריים לקירות ופתרונות גימור שהופכים בתים לחללים מעוררי השראה.
+
+### צור קשר
+https://-65546a73.zappy5.app/contact
+מוכנים לצעד הבא בעיצוב הבית? צרו קשר עם מרכז החיפויים ליאור דיזיין לייעוץ אישי על חיפויים לבתים, טפטים ופתרונות גימור. השאירו פרטים ונחזור אליכם עם הצעה שאי אפשר לסרב לה!
+
+### Products
+https://-65546a73.zappy5.app/products
+המוצרים שלנו - מרכז החיפויים ליאור דיזיין
+
+### Product Detail
+https://-65546a73.zappy5.app/product/:slug
+פרטי המוצר - מרכז החיפויים ליאור דיזיין
+
+### Category
+https://-65546a73.zappy5.app/category/:slug
+מוצרים - מרכז החיפויים ליאור דיזיין
+
+### תודה על פנייתך | מרכז החיפויים ליאור דיזיין
+https://-65546a73.zappy5.app/thank-you
+מרכז החיפויים ליאור דיזיין - תודה על פנייתך | מרכז החיפויים ליאור דיזיין
+
+## Legal & Policy
+
+### Privacy Policy
+https://-65546a73.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://-65546a73.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://-65546a73.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## Products
+
+_No products are currently configured._
+
+---
+
+# Business Context (for LLM understanding)
+
+## About מרכז החיפויים ליאור דיזיין
+Lior Design Center is a home decor and interior finishing business specializing in wall cladding, door and cabinet wraps/wallpapers, and flooring (parquet). The brand carries a design-forward identity with a focus on transforming interior spaces through premium surface materials. The business name suggests a personal brand with a design-oriented vision, likely serving homeowners, contractors, and interior designers.
+
+## Services/Products
+- חיפויים לקירות
+- טפטים לדלתות
+- טפטים לארונות
+- פרקטים
+
+## Target Audience
+- קבלנים ומעצבי פנים
+- בעלי בתים חדשים
+- חובבי עשה זאת בעצמך
+- בעלי בתים יוקרתיים
+- סוכני נדל"ן
+- בעלי עסקים קטנים
+- מעצבות
+- אדריכלים
+- קבלנים
+
+## Industry
+Interior Design & Home Decor
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://-65546a73.zappy5.app/sitemap.xml
+- Robots: https://-65546a73.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://-65546a73.zappy5.app/llms-full.txt
+- Products (JSON): https://-65546a73.zappy5.app/products.json
+- Products (Google Merchant RSS): https://-65546a73.zappy5.app/product-feed.xml
