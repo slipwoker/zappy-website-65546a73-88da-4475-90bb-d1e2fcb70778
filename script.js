@@ -11804,6 +11804,175 @@ window.onload = function() {
     }
 })();
 
+/* ZAPPY_CUSTOM_JS_START:56579ad2d33c */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function() {
+  const section = document.querySelector('.index-testimonials-section');
+  if (!section) return;
+
+  const track = section.querySelector('.testimonial-track');
+  const slides = section.querySelectorAll('.testimonial-slide');
+  const prevBtn = section.querySelector('.testimonial-arrow--prev');
+  const nextBtn = section.querySelector('.testimonial-arrow--next');
+  const dots = section.querySelectorAll('.testimonial-dot');
+
+  if (!track || slides.length === 0) return;
+
+  let currentIndex = 0;
+  let autoPlayInterval;
+  const slideCount = slides.length;
+
+  function getSlidesPerView() {
+    if (window.innerWidth <= 768) return 1;
+    return 3;
+  }
+
+  function updateCarousel() {
+    const slidesPerView = getSlidesPerView();
+    const slideWidth = slides[0].offsetWidth;
+    const gap = 24; // matches CSS gap
+    const offset = currentIndex * (slideWidth + gap);
+    track.style.transform = 'translateX(' + (-offset) + 'px)';
+
+    // Update dots
+    dots.forEach(function(dot, i) {
+      dot.classList.toggle('active', i === currentIndex);
+    });
+
+    // Update arrow visibility
+    if (prevBtn) {
+      prevBtn.style.opacity = currentIndex === 0 ? '0.4' : '1';
+      prevBtn.style.pointerEvents = currentIndex === 0 ? 'none' : 'auto';
+    }
+    if (nextBtn) {
+      const maxIndex = slideCount - slidesPerView;
+      nextBtn.style.opacity = currentIndex >= maxIndex ? '0.4' : '1';
+      nextBtn.style.pointerEvents = currentIndex >= maxIndex ? 'none' : 'auto';
+    }
+  }
+
+  function goToSlide(index) {
+    const slidesPerView = getSlidesPerView();
+    const maxIndex = slideCount - slidesPerView;
+    currentIndex = Math.max(0, Math.min(index, maxIndex));
+    updateCarousel();
+  }
+
+  function nextSlide() {
+    const slidesPerView = getSlidesPerView();
+    const maxIndex = slideCount - slidesPerView;
+    if (currentIndex >= maxIndex) {
+      currentIndex = 0;
+    } else {
+      currentIndex++;
+    }
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    const slidesPerView = getSlidesPerView();
+    const maxIndex = slideCount - slidesPerView;
+    if (currentIndex <= 0) {
+      currentIndex = maxIndex;
+    } else {
+      currentIndex--;
+    }
+    updateCarousel();
+  }
+
+  function startAutoPlay() {
+    stopAutoPlay();
+    autoPlayInterval = setInterval(nextSlide, 4000);
+  }
+
+  function stopAutoPlay() {
+    if (autoPlayInterval) {
+      clearInterval(autoPlayInterval);
+      autoPlayInterval = null;
+    }
+  }
+
+  // Button events
+  if (prevBtn) {
+    prevBtn.addEventListener('click', function() {
+      prevSlide();
+      startAutoPlay();
+    });
+  }
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function() {
+      nextSlide();
+      startAutoPlay();
+    });
+  }
+
+  // Dot clicks
+  dots.forEach(function(dot) {
+    dot.addEventListener('click', function() {
+      const index = parseInt(this.getAttribute('data-index'), 10);
+      goToSlide(index);
+      startAutoPlay();
+    });
+  });
+
+  // Pause on hover
+  section.addEventListener('mouseenter', stopAutoPlay);
+  section.addEventListener('mouseleave', startAutoPlay);
+
+  // Touch swipe support
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  track.addEventListener('touchstart', function(e) {
+    touchStartX = e.changedTouches[0].screenX;
+    stopAutoPlay();
+  }, {passive: true});
+
+  track.addEventListener('touchend', function(e) {
+    touchEndX = e.changedTouches[0].screenX;
+    const diff = touchStartX - touchEndX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        nextSlide();
+      } else {
+        prevSlide();
+      }
+    }
+    startAutoPlay();
+  }, {passive: true});
+
+  // Recalculate on resize
+  let resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      const slidesPerView = getSlidesPerView();
+      const maxIndex = slideCount - slidesPerView;
+      if (currentIndex > maxIndex) {
+        currentIndex = maxIndex;
+      }
+      updateCarousel();
+    }, 200);
+  });
+
+  // Initialize
+  updateCarousel();
+  startAutoPlay();
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:56579ad2d33c */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
