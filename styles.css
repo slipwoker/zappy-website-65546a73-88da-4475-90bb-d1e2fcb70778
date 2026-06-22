@@ -1978,7 +1978,7 @@ main { flex: 1 0 auto; }
 .index-hero-section .index-hero-overlay h1 {
   font-family: 'Rubik', sans-serif;
   font-size: 3.8rem;
-  font-weight: 300;
+  font-weight: 300 !important;
   letter-spacing: -0.02em;
   line-height: 1.1;
   color: var(--text-light);
@@ -11348,6 +11348,11 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .index-showcase-section__image-wrap img,
 .index-showcase-section .mosaic-img {
   border-radius: 12px;
+}
+
+.index-showcase-section__image-wrap > div[data-zappy-zoom-wrapper] {
+  border-radius: 12px;
+  overflow: hidden;
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
