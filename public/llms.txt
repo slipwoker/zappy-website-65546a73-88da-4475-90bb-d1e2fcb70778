@@ -6,31 +6,31 @@
 
 ## Pages
 
-### בית
+### הפכו קירות לחלום — מרכז החיפויים ליאור דיזיין
 https://merkaz-hahipuyim-lior-design.zappy5.app
 מחפשים חיפויים לבתים שישדרגו כל פינה? במרכז החיפויים ליאור דיזיין תגלו לוחות PVC, טפטים יוקרתיים ופתרונות עיצוב שיכניסו חיים חדשים לבית. כנסו עכשיו ותתאהבו!
 
-### שירותים
+### שדרגו כל משטח בקליק — מרכז החיפויים ליאור דיזיין
 https://merkaz-hahipuyim-lior-design.zappy5.app/services
 ציפוי לדלת, טפט לדלת, לוח PVC דמוי שיש ופרקטים – גלו את מגוון השירותים שלנו להתאמת משטחים מושלמת. הפיכת הבית ליצירת אמנות מתחילה כאן, עם ייעוץ מקצועי וליווי צמוד.
 
-### אודות
+### טפטים לדלתות
+https://merkaz-hahipuyim-lior-design.zappy5.app/door-wallpapers
+מרכז החיפויים ליאור דיזיין - טפטים לדלתות
+
+### הסיפור שמאחורי העיצוב — מרכז החיפויים ליאור דיזיין
 https://merkaz-hahipuyim-lior-design.zappy5.app/about
 מרכז החיפויים ליאור דיזיין נולד מאהבה לחומרים משובחים ולעיצוב פורץ דרך. אנחנו מביאים ניסיון עשיר בלוחות PVC, סרגלים פולימריים לקירות ופתרונות גימור שהופכים בתים לחללים מעוררי השראה.
 
-### צור קשר
-https://merkaz-hahipuyim-lior-design.zappy5.app/contact
-מוכנים לצעד הבא בעיצוב הבית? צרו קשר עם מרכז החיפויים ליאור דיזיין לייעוץ אישי על חיפויים לבתים, טפטים ופתרונות גימור. השאירו פרטים ונחזור אליכם עם הצעה שאי אפשר לסרב לה!
-
-### Products
+### מוצרים
 https://merkaz-hahipuyim-lior-design.zappy5.app/products
 המוצרים שלנו - מרכז החיפויים ליאור דיזיין
 
-### Product Detail
+### פרטי המוצר
 https://merkaz-hahipuyim-lior-design.zappy5.app/product/:slug
 פרטי המוצר - מרכז החיפויים ליאור דיזיין
 
-### Category
+### מוצרים
 https://merkaz-hahipuyim-lior-design.zappy5.app/category/:slug
 מוצרים - מרכז החיפויים ליאור דיזיין
 
@@ -38,9 +38,12 @@ https://merkaz-hahipuyim-lior-design.zappy5.app/category/:slug
 https://merkaz-hahipuyim-lior-design.zappy5.app/thank-you
 מרכז החיפויים ליאור דיזיין - תודה על פנייתך | מרכז החיפויים ליאור דיזיין
 
-### טפטים לדלתות
-https://merkaz-hahipuyim-lior-design.zappy5.app/door-wallpapers
-מרכז החיפויים ליאור דיזיין - טפטים לדלתות
+### החלום העיצובי שלך מחכה — מרכז החיפויים ליאור דיזיין
+https://merkaz-hahipuyim-lior-design.zappy5.app/contact
+מוכנים לצעד הבא בעיצוב הבית? צרו קשר עם מרכז החיפויים ליאור דיזיין לייעוץ אישי על חיפויים לבתים, טפטים ופתרונות גימור. השאירו פרטים ונחזור אליכם עם הצעה שאי אפשר לסרב לה!
+
+### Page
+https://merkaz-hahipuyim-lior-design.zappy5.app/page-1782150505154
 
 ## Legal & Policy
 
