@@ -812,7 +812,7 @@
     </div>
   
 <script>window.ZAPPY_PRODUCTS_LISTING_PATH = "/products";</script>
-<script>window.ZAPPY_WEBSITE_ID = "65546a73-88da-4475-90bb-d1e2fcb70778";window.ZAPPY_API_BASE = "https://api.zappy5.com";</script><a class="skip-link" href="#main">דלג לתוכן הראשי</a>
+<script>window.ZAPPY_WEBSITE_ID = "65546a73-88da-4475-90bb-d1e2fcb70778";window.ZAPPY_API_BASE = (window.location.pathname.includes('/preview') ? "https://api.zappy5.com" : "https://api.zappy5.com");</script><a class="skip-link" href="#main">דלג לתוכן הראשי</a>
   <nav class="navbar">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
     <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1324,9 +1324,9 @@
 </script>
   
   <main id="main">
-    <section data-band-index="0" class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim">
+    <section data-band-index="0" class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim" id="zappy-section-0" style="margin-top: -102px !important; padding-top: 102px !important;">
   <!-- Full-bleed background image -->
-  <img loading="eager" fetchpriority="high" data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="A refined contemporary Israeli living room interior with premium wall cladding panels in warm wood tones, wrapped cabinetry doors with subtle texture, and natural oak parquet flooring. Soft daylight streaming through large windows, aspirational architectural feel with visible material grain and tactile surfaces. No people, high-end editorial photography style." width="1200" height="600" src="/assets/site-index-hero-image-1.webp" alt="פנים בית מעוצב עם חיפויי קירות יוקרתיים, ציפוי דלתות וארונות ופרקט עץ טבעי" class="index-hero-bg">
+  <img loading="eager" fetchpriority="high" data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="A refined contemporary Israeli living room interior with premium wall cladding panels in warm wood tones, wrapped cabinetry doors with subtle texture, and natural oak parquet flooring. Soft daylight streaming through large windows, aspirational architectural feel with visible material grain and tactile surfaces. No people, high-end editorial photography style." width="1200" height="600" src="/assets/site-index-hero-image-1.webp" alt="פנים בית מעוצב עם חיפויי קירות יוקרתיים, ציפוי דלתות וארונות ופרקט עץ טבעי" class="index-hero-bg" data-hero-background="true" data-element-type="image" data-element-id="img-1782152096263-k2r8448ch" style="object-position: 50% 50%;">
   
   <!-- Cinematic scrim overlay for text legibility -->
   <div class="index-hero-scrim" aria-hidden="true"></div>
@@ -1349,11 +1349,11 @@
     <h1>עיצוב פנים שמתחיל בחיפוי מושלם</h1>
     <h3>חיפויי קירות יוקרתיים, ציפוי דלתות וארונות, ופרקטים בעיצוב אישי – להפוך כל חלל לחוויה</h3>
     <div class="index-hero-ctas">
-      <a href="/contact" class="btn-primary index-hero-btn">לייעוץ והצעת מחיר</a>
-      <a href="/services" class="btn-secondary index-hero-btn">לשירותים שלנו</a>
+      <a href="/contact" class="btn-primary index-hero-btn" data-element-type="button" data-element-id="btn-1782152096260-8nv764lty" data-native-element="true">לייעוץ והצעת מחיר</a>
+      <a href="/services" class="index-hero-btn btn btn-outline btn-secondary" data-element-type="button" data-element-id="btn-1782152096260-cbd3f1n15" data-native-element="true" style="outline: none; border-color: var(--primary-color, var(--primary, #8B0000)) !important; color: var(--primary-color, var(--primary, #8B0000)) !important; background-color: transparent !important; background-image: none !important;">לשירותים שלנו</a>
     </div>
   </div>
-</section>
+<div class="zappy-inserted-element" id="zappy-element-1782152545877-zaua037hq" data-element-id="zappy-element-1782152545877-zaua037hq" data-element-type="button" data-zappy-newly-inserted="true" style="margin-top: 20px; margin-bottom: 20px; text-align: center; display: flex; justify-content: center; align-items: flex-start; width: 100% !important; align-self: start !important; height: auto !important;"><a href="#" class="btn btn-primary" style="text-decoration: none; padding: 12px 24px; border-radius: 6px; display: inline-block; border-color: var(--primary-color, var(--primary, #8B0000)) !important; border-style: solid; border-width: 2px; border-image: initial; color: rgb(255, 255, 255) !important; width: auto !important; flex: 0 0 auto !important; cursor: pointer !important; background-color: var(--primary-color, var(--primary, #8B0000)) !important; background-image: none !important;" data-element-type="button" data-text-color="auto" data-element-id="zappy-element-1782152545877-zaua037hq" id="zappy-element-1782152545877-zaua037hq">לחץ כאן</a></div></section>
 
     <section class="featured-products-section" id="featured-products" data-zappy-dynamic="true">
       <div class="container">
@@ -1404,8 +1404,8 @@
             <svg class="service-icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M12 5v14"></path><path d="M3 12h18"></path></svg>
           </div>
           <div class="service-text" data-grid-item-index="1">
-            <h3 class="service-title" >טפטים לדלתות&nbsp;</h3>
-            <p class="service-desc" >ציפוי דלתות וארונות בטפטים איכותיים המחקים טקסטורות טבעיות. פתרון מושלם לחידוש המטבח, חדר השינה או ארונות הקיר ללא החלפה יקרה.</p>
+            <h3 class="service-title" style="">טפטים לדלתות&nbsp;</h3>
+            <p class="service-desc" style="">ציפוי דלתות וארונות בטפטים איכותיים המחקים טקסטורות טבעיות. פתרון מושלם לחידוש המטבח, חדר השינה או ארונות הקיר ללא החלפה יקרה.</p>
           </div>
         </div>
         
@@ -1416,12 +1416,12 @@
           </div>
           <div class="service-text" data-grid-item-index="1">
             <h3 class="service-title">פרקטים וריצוף</h3>
-            <p class="service-desc" >פרקט עץ טבעי ופרקט למינציה במגוון גוונים ומרקמים. התקנה מקצועית עם דגש על גימור מושלם, בידוד תרמי ואקוסטי שמשדרג את איכות החיים בבית.</p>
+            <p class="service-desc" style="">פרקט עץ טבעי ופרקט למינציה במגוון גוונים ומרקמים. התקנה מקצועית עם דגש על גימור מושלם, בידוד תרמי ואקוסטי שמשדרג את איכות החיים בבית.</p>
           </div>
         </div>
       </div>
       
-      <p ><a href="#contact" class="services-cta" style="color: rgb(0, 0, 0) !important;">לקביעת פגישת ייעוץ</a>
+      <p style=""><a href="#contact" class="services-cta" style="color: rgb(0, 0, 0) !important;">לקביעת פגישת ייעוץ</a>
     </p></div>
     
     <!-- Imagery Column (END - Left in RTL) -->
@@ -1433,11 +1433,11 @@
         </div>
         <!-- Secondary tile - overlapping -->
         <div class="mosaic-tile mosaic-secondary">
-          <img loading="lazy" decoding="async" data-placeholder="index-services-image-2" data-context="Close-up of a beautifully wrapped kitchen cabinet door with wood-grain textured wallpaper in smoked oak finish, modern brass handle detail" width="400" height="300" src="/assets/site-index-services-image-2.webp" alt="ציפוי דלת ארון מטבח בטפט איכותי" class="mosaic-img" data-element-type="image" data-element-id="img-1782149178407-xknk94mvo" >
+          <img loading="lazy" decoding="async" data-placeholder="index-services-image-2" data-context="Close-up of a beautifully wrapped kitchen cabinet door with wood-grain textured wallpaper in smoked oak finish, modern brass handle detail" width="400" height="300" src="/assets/site-index-services-image-2.webp" alt="ציפוי דלת ארון מטבח בטפט איכותי" class="mosaic-img" data-element-type="image" data-element-id="img-1782149178407-xknk94mvo" style="">
         </div>
         <!-- Third tile -->
         <div class="mosaic-tile mosaic-tertiary">
-          <img loading="lazy" decoding="async" data-placeholder="index-services-image-3" data-context="Elegant herringbone parquet flooring in a bright hallway, natural wood tones with matte finish, sunlight streaming through a window" width="400" height="300" src="/assets/site-index-services-image-3.webp" alt="פרקט עץ טבעי בדוגמת פישבון במסדרון מואר" class="mosaic-img" data-element-type="image" data-element-id="img-1782149178407-ss2rijlyi" >
+          <img loading="lazy" decoding="async" data-placeholder="index-services-image-3" data-context="Elegant herringbone parquet flooring in a bright hallway, natural wood tones with matte finish, sunlight streaming through a window" width="400" height="300" src="/assets/site-index-services-image-3.webp" alt="פרקט עץ טבעי בדוגמת פישבון במסדרון מואר" class="mosaic-img" data-element-type="image" data-element-id="img-1782149178407-ss2rijlyi" style="">
         </div>
         <!-- Muted color backplate peeking from behind main tile -->
         <div class="mosaic-backplate" aria-hidden="true"></div>
