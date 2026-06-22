@@ -1975,24 +1975,25 @@ main { flex: 1 0 auto; }
   text-align: start;
 }
 
-/* H1 - main headline */
-.index-hero-section .index-hero-overlay h1 {font-family: 'Rubik', sans-serif;
+.index-hero-section .index-hero-overlay h1 {
+  font-family: 'Rubik', sans-serif;
   font-size: 3.8rem;
   font-weight: 300;
-  letter-spacing: -0.01em;
-  line-height: 1.15;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
   color: var(--text-light);
-  margin: 0 0 20px 0;}
+  margin: 0 0 20px 0;
+}
 
-/* H3 - supporting subtitle */
 .index-hero-section .index-hero-overlay h3 {
   font-family: 'Rubik', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.35;
+  line-height: 1.5;
   color: rgba(242,236,227,0.85);
   margin: 0 0 32px 0;
   text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+  letter-spacing: -0.005em;
 }
 
 /* CTA buttons row */
@@ -11303,6 +11304,50 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 #mic-init-access-tool #mic-access-tool-general-button,
 ._access-icon {
   display: flex !important;
+}
+
+.index-services-section .service-item {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  transition: box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.index-services-section .service-item:hover {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+  transform: translateY(-2px);
+}
+
+.index-testimonials-section__card {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  transition: box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.index-testimonials-section__card:hover {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+  transform: translateY(-2px);
+}
+
+.index-showcase-section__item {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  transition: box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.index-showcase-section__item:hover {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+  transform: translateY(-2px);
+}
+
+.index-services-section,
+.index-showcase-section,
+.index-testimonials-section,
+.index-cta-section {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.index-services-section .mosaic-img,
+.index-showcase-section__image-wrap img,
+.index-showcase-section .mosaic-img {
+  border-radius: 12px;
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
