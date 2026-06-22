@@ -1,8 +1,31 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-06-22T16:54:15.436Z",
+  "generated_at": "2026-06-22T16:55:12.470Z",
   "base_url": "https://merkaz-hahipuyim-lior-design.zappy5.app",
   "currency": "ILS",
-  "count": 0,
-  "products": []
+  "count": 1,
+  "products": [
+    {
+      "id": "f2ad270e-c52a-4549-ac1b-04d20cb6d13c",
+      "slug": "tpt-ldlt-jpka1q",
+      "name": "טפט לדלת",
+      "name_translations": {},
+      "description": "",
+      "short_description": "ראאראאראא",
+      "sku": null,
+      "brand": "ליאור דיזיין",
+      "price": 0,
+      "base_price": 0,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://merkaz-hahipuyim-lior-design.zappy5.app/assets/product-1782147257749-qtu9n.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://merkaz-hahipuyim-lior-design.zappy5.app/product/tpt-ldlt-jpka1q",
+      "categories": [],
+      "updated_at": "2026-06-22T16:54:46.873Z"
+    }
+  ]
 }

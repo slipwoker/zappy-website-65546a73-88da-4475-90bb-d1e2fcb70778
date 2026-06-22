@@ -63,7 +63,15 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-_No products are currently configured._
+**Total active products: 1**
+
+### טפט לדלת
+https://merkaz-hahipuyim-lior-design.zappy5.app/product/tpt-ldlt-jpka1q
+- Price: 0.00 ILS
+- Availability: In stock
+- Brand: ליאור דיזיין
+- Description: ראאראאראא
+- Image: https://merkaz-hahipuyim-lior-design.zappy5.app/assets/product-1782147257749-qtu9n.webp
 
 ---
 
