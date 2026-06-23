@@ -11488,6 +11488,11 @@ html body .index-testimonials-section .testimonial-arrow { width: 44px !importan
 html body .index-testimonials-section .testimonial-arrow { height: 44px !important; }
 html body .index-testimonials-section .index-testimonials-section__card-inner { height: 100% !important; }
 
+
+#index-testimonials-section .testimonial-slide {
+  flex: 0 0 calc(50% - 12px) !important;
+  min-width: calc(50% - 12px) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
