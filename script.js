@@ -11973,6 +11973,193 @@ window.onload = function() {
 })();
 /* ZAPPY_CUSTOM_JS_END:56579ad2d33c */
 
+/* ZAPPY_CUSTOM_JS_START:49aa44f1fefb */
+(function () {
+  function __zappyCustomInit() {
+    try {
+// Auto-rotating testimonial slider for index testimonials section
+(function() {
+  const section = document.querySelector('.index-testimonials-section');
+  if (!section) return;
+
+  const track = section.querySelector('.testimonial-track');
+  const slides = section.querySelectorAll('.testimonial-slide');
+  const dots = section.querySelectorAll('.testimonial-dot');
+  const prevBtn = section.querySelector('.testimonial-arrow--prev');
+  const nextBtn = section.querySelector('.testimonial-arrow--next');
+  const wrapper = section.querySelector('.testimonial-track-wrapper');
+
+  if (!track || slides.length === 0) return;
+
+  let currentIndex = 0;
+  let autoTimer = null;
+  let isUserInteracting = false;
+  const SLIDE_INTERVAL = 5000; // 5 seconds - slow auto-advance
+  const TRANSITION_SPEED = 600; // ms for CSS transition
+
+  function getSlidesPerView() {
+    const containerWidth = section.querySelector('.testimonial-track-container').offsetWidth;
+    if (containerWidth >= 960) return 3;
+    if (containerWidth >= 640) return 2;
+    return 1;
+  }
+
+  function updateSlider() {
+    const slidesPerView = getSlidesPerView();
+    const maxIndex = Math.max(0, slides.length - slidesPerView);
+    if (currentIndex > maxIndex) currentIndex = maxIndex;
+    if (currentIndex < 0) currentIndex = 0;
+
+    const slideWidth = slides[0].offsetWidth;
+    const gap = 24; // gap between slides
+    const offset = currentIndex * (slideWidth + gap);
+    track.style.transform = 'translateX(' + (-offset) + 'px)';
+    track.style.transition = 'transform ' + (TRANSITION_SPEED / 1000) + 's ease';
+
+    // Update dots
+    if (dots.length > 0) {
+      dots.forEach(function(dot, i) {
+        if (i >= currentIndex && i < currentIndex + slidesPerView) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      });
+    }
+  }
+
+  function goToNext() {
+    const slidesPerView = getSlidesPerView();
+    const maxIndex = Math.max(0, slides.length - slidesPerView);
+    if (currentIndex >= maxIndex) {
+      currentIndex = 0; // Loop back to start
+    } else {
+      currentIndex++;
+    }
+    updateSlider();
+  }
+
+  function goToPrev() {
+    const slidesPerView = getSlidesPerView();
+    const maxIndex = Math.max(0, slides.length - slidesPerView);
+    if (currentIndex <= 0) {
+      currentIndex = maxIndex; // Loop to end
+    } else {
+      currentIndex--;
+    }
+    updateSlider();
+  }
+
+  function goToDot(index) {
+    currentIndex = index;
+    updateSlider();
+  }
+
+  function startAutoPlay() {
+    stopAutoPlay();
+    autoTimer = setInterval(function() {
+      if (!isUserInteracting) {
+        goToNext();
+      }
+    }, SLIDE_INTERVAL);
+  }
+
+  function stopAutoPlay() {
+    if (autoTimer) {
+      clearInterval(autoTimer);
+      autoTimer = null;
+    }
+  }
+
+  // Arrow buttons
+  if (prevBtn) {
+    prevBtn.addEventListener('click', function() {
+      goToPrev();
+      isUserInteracting = true;
+      stopAutoPlay();
+      // Resume after 8 seconds of inactivity
+      clearTimeout(autoTimer);
+      autoTimer = setTimeout(function() {
+        isUserInteracting = false;
+        startAutoPlay();
+      }, 8000);
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function() {
+      goToNext();
+      isUserInteracting = true;
+      stopAutoPlay();
+      clearTimeout(autoTimer);
+      autoTimer = setTimeout(function() {
+        isUserInteracting = false;
+        startAutoPlay();
+      }, 8000);
+    });
+  }
+
+  // Dot clicks
+  dots.forEach(function(dot, index) {
+    dot.addEventListener('click', function() {
+      goToDot(index);
+      isUserInteracting = true;
+      stopAutoPlay();
+      clearTimeout(autoTimer);
+      autoTimer = setTimeout(function() {
+        isUserInteracting = false;
+        startAutoPlay();
+      }, 8000);
+    });
+  });
+
+  // Pause on hover over the slider area
+  if (wrapper) {
+    wrapper.addEventListener('mouseenter', function() {
+      isUserInteracting = true;
+      stopAutoPlay();
+    });
+    wrapper.addEventListener('mouseleave', function() {
+      isUserInteracting = false;
+      startAutoPlay();
+    });
+  }
+
+  // Touch interactions
+  if (wrapper) {
+    wrapper.addEventListener('touchstart', function() {
+      isUserInteracting = true;
+      stopAutoPlay();
+    });
+    wrapper.addEventListener('touchend', function() {
+      setTimeout(function() {
+        isUserInteracting = false;
+        startAutoPlay();
+      }, 8000);
+    });
+  }
+
+  // Handle resize
+  window.addEventListener('resize', function() {
+    updateSlider();
+  });
+
+  // Init
+  updateSlider();
+  startAutoPlay();
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:49aa44f1fefb */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
