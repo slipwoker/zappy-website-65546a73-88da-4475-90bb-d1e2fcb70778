@@ -2744,8 +2744,8 @@ main { flex: 1 0 auto; }
 }
 
 .index-testimonials-section__grid {
-  display: block;
-  grid-template-columns: none;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 32px;
   align-items: stretch;
 }
@@ -11325,8 +11325,8 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 }
 
 .index-testimonials-section .testimonial-slide {
-  flex: 0 0 calc(33.333% - 16px);
-  min-width: calc(33.333% - 16px);
+  flex: 0 0 calc(50% - 12px);
+  min-width: calc(50% - 12px);
 }
 
 .index-testimonials-section .testimonial-arrow {
