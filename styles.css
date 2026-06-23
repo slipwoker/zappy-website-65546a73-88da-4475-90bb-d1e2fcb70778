@@ -2743,10 +2743,9 @@ main { flex: 1 0 auto; }
   margin: 0 auto;
 }
 
-/* Grid */
 .index-testimonials-section__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: block;
+  grid-template-columns: none;
   gap: 32px;
   align-items: stretch;
 }
