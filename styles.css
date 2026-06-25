@@ -13129,6 +13129,218 @@ html body .index-services-section .gallery-img { height: 100% !important; }
     font-size: 1.15rem;
   }
 }
+
+/* AI-generated section */
+.lior-social-follow {
+  background-color: #faf7f4;
+  padding: 80px 24px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  text-align: center;
+}
+
+.social-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.social-header {
+  margin-bottom: 48px;
+}
+
+.social-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.social-subtitle {
+  font-size: 1.15rem;
+  color: #5a5a6e;
+  margin: 0 0 20px 0;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.social-divider {
+  width: 60px;
+  height: 4px;
+  background: var(--primary, #A86C52);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.social-icons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social-link:hover {
+  transform: translateY(-6px);
+}
+
+.social-link:focus-visible {
+  outline: 3px solid var(--primary, #A86C52);
+  outline-offset: 6px;
+  border-radius: 50%;
+}
+
+.social-icon-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #ffffff;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.social-icon-circle i,
+.social-icon-circle .waze-custom-icon {
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+}
+
+.social-link:hover .social-icon-circle i,
+.social-link:hover .social-icon-circle .waze-custom-icon {
+  transform: scale(1.15);
+}
+
+/* Facebook */
+.social-facebook {
+  background: linear-gradient(135deg, #1877F2 0%, #0d5db8 100%);
+}
+
+.social-link:hover .social-facebook {
+  box-shadow: 0 10px 28px rgba(24, 119, 242, 0.4);
+  background: linear-gradient(135deg, #2390ff 0%, #1877F2 100%);
+}
+
+/* Instagram */
+.social-instagram {
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-link:hover .social-instagram {
+  box-shadow: 0 10px 28px rgba(220, 39, 67, 0.4);
+  background: linear-gradient(135deg, #f7a54a 0%, #ec7a52 25%, #e63c58 50%, #d93676 75%, #c92a98 100%);
+}
+
+/* WhatsApp */
+.social-whatsapp {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+}
+
+.social-link:hover .social-whatsapp {
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.4);
+  background: linear-gradient(135deg, #2fe973 0%, #1aac9e 100%);
+}
+
+/* Waze - distinct and visible */
+.social-waze {
+  background: linear-gradient(135deg, #33CCFF 0%, #1a8fcc 100%);
+  border: 3px solid #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1), 0 0 0 2px rgba(51, 204, 255, 0.3);
+}
+
+.social-link:hover .social-waze {
+  box-shadow: 0 10px 28px rgba(51, 204, 255, 0.5), 0 0 0 4px rgba(51, 204, 255, 0.25);
+  background: linear-gradient(135deg, #5cd6ff 0%, #33a8e0 100%);
+}
+
+.waze-custom-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.social-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4a4a5e;
+  letter-spacing: 0.3px;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover .social-label {
+  color: var(--primary, #A86C52);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .lior-social-follow {
+    padding: 60px 16px;
+  }
+  
+  .social-title {
+    font-size: 2rem;
+  }
+  
+  .social-subtitle {
+    font-size: 1rem;
+  }
+  
+  .social-icons-wrapper {
+    gap: 24px;
+  }
+  
+  .social-icon-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+  
+  .waze-custom-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .social-label {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icons-wrapper {
+    gap: 18px;
+  }
+  
+  .social-icon-circle {
+    width: 54px;
+    height: 54px;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .waze-custom-icon {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .social-title {
+    font-size: 1.75rem;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
