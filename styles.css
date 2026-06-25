@@ -11562,6 +11562,26 @@ html body .index-services-section .gallery-image-wrap { width: 100% !important; 
 html body .index-services-section .gallery-img { width: 100% !important; }
 html body .index-services-section .gallery-img { height: 100% !important; }
 
+
+.index-services-section .gallery-catalog-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 4px 12px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+}
+
+.index-services-section .gallery-catalog-link:hover {
+  color: #8a5540;
+  border-color: var(--primary-color);
+  background: rgba(168, 108, 82, 0.06);
+  transform: translateX(-4px);
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
