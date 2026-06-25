@@ -12086,6 +12086,398 @@ html body .index-services-section .gallery-img { height: 100% !important; }
     gap: 20px;
   }
 }
+
+/* Cloned section from URL */
+/* =============================================
+   HERO SECTION — Lior Design
+   Dark dramatic hero + category nav + partners
+   ============================================= */
+
+.lior-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+}
+
+/* --- Background Image & Overlay --- */
+.lior-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.lior-hero__bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.lior-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(20, 15, 10, 0.65) 40%,
+    rgba(30, 20, 10, 0.7) 70%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  z-index: 1;
+}
+
+/* --- Hero Text Content --- */
+.lior-hero__content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  padding: 120px 24px 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.lior-hero__text-block {
+  max-width: 600px;
+  text-align: right;
+}
+
+.lior-hero__title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 16px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.lior-hero__subtitle {
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  line-height: 1.7;
+  max-width: 480px;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Category Navigation Strip --- */
+.lior-hero__nav-strip {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.lior-hero__nav-strip::-webkit-scrollbar {
+  height: 4px;
+}
+
+.lior-hero__nav-strip::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.lior-hero__nav-strip::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+}
+
+.lior-hero__nav-inner {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 8px;
+  min-width: max-content;
+}
+
+.lior-hero__nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 18px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.75);
+  transition: color 0.25s ease, background-color 0.25s ease, transform 0.2s ease;
+  min-width: 80px;
+  position: relative;
+  font-family: system-ui, sans-serif;
+  white-space: nowrap;
+}
+
+.lior-hero__nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background: var(--primary, #A86C52);
+  border-radius: 3px 3px 0 0;
+  transition: width 0.3s ease;
+}
+
+.lior-hero__nav-item:hover,
+.lior-hero__nav-item:focus-visible {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.06);
+  transform: translateY(-2px);
+}
+
+.lior-hero__nav-item:hover::after,
+.lior-hero__nav-item:focus-visible::after {
+  width: 60%;
+}
+
+.lior-hero__nav-item:focus-visible {
+  outline: 2px solid var(--primary, #A86C52);
+  outline-offset: -2px;
+  border-radius: 4px;
+}
+
+.lior-hero__nav-icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.lior-hero__nav-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.lior-hero__nav-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* --- Partner/Sponsor Logo Strip --- */
+.lior-hero__partners {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 16px 24px;
+}
+
+.lior-hero__partners-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.lior-hero__partners-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.lior-hero__partners-logos {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lior-hero__partner-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.lior-hero__partner-logo:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.lior-hero__partner-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.03em;
+}
+
+/* =============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================= */
+
+@media (max-width: 1024px) {
+  .lior-hero__content {
+    padding: 100px 20px 50px;
+  }
+
+  .lior-hero__nav-item {
+    padding: 14px 14px;
+    min-width: 68px;
+  }
+
+  .lior-hero__nav-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .lior-hero__nav-label {
+    font-size: 0.72rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .lior-hero {
+    min-height: 90vh;
+  }
+
+  .lior-hero__content {
+    padding: 80px 16px 40px;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lior-hero__text-block {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .lior-hero__title {
+    font-size: 2.2rem;
+  }
+
+  .lior-hero__subtitle {
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .lior-hero__nav-inner {
+    justify-content: flex-start;
+    padding: 0 4px;
+  }
+
+  .lior-hero__nav-item {
+    padding: 12px 10px;
+    min-width: 60px;
+  }
+
+  .lior-hero__nav-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .lior-hero__nav-label {
+    font-size: 0.68rem;
+  }
+
+  .lior-hero__partners-inner {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .lior-hero__partners-logos {
+    gap: 16px;
+  }
+
+  .lior-hero__partner-logo {
+    padding: 6px 12px;
+  }
+
+  .lior-hero__partner-name {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .lior-hero__content {
+    padding: 70px 12px 30px;
+  }
+
+  .lior-hero__title {
+    font-size: 1.8rem;
+  }
+
+  .lior-hero__subtitle {
+    font-size: 0.9rem;
+  }
+
+  .lior-hero__nav-item {
+    padding: 10px 8px;
+    min-width: 52px;
+  }
+
+  .lior-hero__nav-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .lior-hero__nav-label {
+    font-size: 0.62rem;
+  }
+
+  .lior-hero__partners {
+    padding: 12px 12px;
+  }
+
+  .lior-hero__partners-label {
+    font-size: 0.7rem;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .lior-hero__nav-item,
+  .lior-hero__partner-logo {
+    transition: none;
+  }
+
+  .lior-hero__nav-item::after {
+    transition: none;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
