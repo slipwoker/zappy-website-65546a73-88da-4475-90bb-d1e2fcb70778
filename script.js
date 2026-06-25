@@ -12161,6 +12161,123 @@ window.onload = function() {
 /* ZAPPY_CUSTOM_JS_END:49aa44f1fefb */
 
 
+/* Added Component Script */
+(function() {
+  const track = document.getElementById('sliderTrack');
+  const slides = Array.from(track.children);
+  const dots = Array.from(document.querySelectorAll('#sliderDots .dot'));
+  const prevBtn = document.getElementById('prevSlide');
+  const nextBtn = document.getElementById('nextSlide');
+  
+  let currentIndex = 0;
+  let autoPlayInterval;
+  const autoPlayDelay = 5000;
+
+  function updateSlider(index) {
+    if (index < 0) index = slides.length - 1;
+    if (index >= slides.length) index = 0;
+    
+    currentIndex = index;
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    track.style.transform = 'translateX(' + (-slideWidth * currentIndex) + 'px)';
+    
+    // Update dots
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentIndex);
+      dot.setAttribute('aria-selected', i === currentIndex);
+    });
+  }
+
+  function nextSlide() {
+    updateSlider(currentIndex + 1);
+  }
+
+  function prevSlide() {
+    updateSlider(currentIndex - 1);
+  }
+
+  function startAutoPlay() {
+    stopAutoPlay();
+    autoPlayInterval = setInterval(nextSlide, autoPlayDelay);
+  }
+
+  function stopAutoPlay() {
+    clearInterval(autoPlayInterval);
+  }
+
+  // Event listeners
+  nextBtn.addEventListener('click', () => {
+    nextSlide();
+    startAutoPlay();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    prevSlide();
+    startAutoPlay();
+  });
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const index = parseInt(dot.getAttribute('data-index'));
+      updateSlider(index);
+      startAutoPlay();
+    });
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      prevSlide();
+      startAutoPlay();
+    } else if (e.key === 'ArrowRight') {
+      nextSlide();
+      startAutoPlay();
+    }
+  });
+
+  // Pause on hover
+  const wrapper = document.querySelector('.slider-wrapper');
+  wrapper.addEventListener('mouseenter', stopAutoPlay);
+  wrapper.addEventListener('mouseleave', startAutoPlay);
+
+  // Touch swipe support
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  wrapper.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    stopAutoPlay();
+  }, { passive: true });
+
+  wrapper.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const diff = touchStartX - touchEndX;
+    
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        nextSlide();
+      } else {
+        prevSlide();
+      }
+    }
+    startAutoPlay();
+  });
+
+  // Handle resize
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      updateSlider(currentIndex);
+    }, 150);
+  });
+
+  // Initialize
+  updateSlider(0);
+  startAutoPlay();
+})();
+
+
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
   try {
