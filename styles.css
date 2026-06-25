@@ -11582,6 +11582,510 @@ html body .index-services-section .gallery-img { height: 100% !important; }
   background: rgba(168, 108, 82, 0.06);
   transform: translateX(-4px);
 }
+
+/* Cloned section from URL */
+/* ========== BASE & VARIABLES ========== */
+.lior-fullpage {
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  color: #2c2c2c;
+  line-height: 1.6;
+  background: #fdfbf7;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ========== 1. HERO BANNER ========== */
+.lior-hero {
+  background: linear-gradient(135deg, #2c2c2c 0%, #4a3f35 100%);
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 60px 20px;
+}
+
+.lior-hero__overlay {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.lior-hero__title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.lior-hero__subtitle {
+  font-size: 1.3rem;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.lior-hero__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.lior-hero__icon-item {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 16px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+  backdrop-filter: blur(6px);
+  min-width: 90px;
+  color: #fff;
+}
+
+.lior-hero__icon-item:hover {
+  background: rgba(255,255,255,0.22);
+  border-color: var(--primary, #A86C52);
+  transform: translateY(-3px);
+}
+
+.lior-hero__icon-circle {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.lior-hero__icon-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* ========== 2. TRUST BAR ========== */
+.lior-trust {
+  background: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 32px 20px;
+  border-bottom: 1px solid #eae5dc;
+}
+
+.lior-trust__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: #3a3a3a;
+}
+
+.lior-trust__icon {
+  font-size: 1.8rem;
+}
+
+.lior-trust__text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+/* ========== 3. PRODUCT CATEGORIES ========== */
+.lior-categories {
+  padding: 70px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lior-categories__title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 6px;
+}
+
+.lior-categories__subtitle {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.lior-categories__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.lior-cat-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+}
+
+.lior-cat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.14);
+}
+
+.lior-cat-card__img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  background: #e0d7cc;
+}
+
+.lior-cat-card__label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, transparent 100%);
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 30px 16px 14px;
+  text-align: center;
+}
+
+/* ========== 4. VIDEO TESTIMONIALS ========== */
+.lior-videos {
+  background: #1e1b18;
+  padding: 70px 20px;
+  color: #fff;
+}
+
+.lior-videos__title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 36px;
+  color: #fff;
+}
+
+.lior-videos__carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.lior-video-card {
+  min-width: 280px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.lior-video-card__thumb {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  background: #2a2522;
+}
+
+.lior-video-card__img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.lior-video-card__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,255,255,0.9);
+  border: none;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
+
+.lior-video-card__play:hover {
+  background: var(--primary, #A86C52);
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.lior-video-card__play-icon {
+  font-size: 1.3rem;
+  color: #1e1b18;
+}
+
+.lior-video-card__caption {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e0d7cc;
+  text-align: center;
+}
+
+/* ========== 5. DECORATIVE BANNER ========== */
+.lior-banner {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+
+.lior-banner__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ========== 6. ICON BENEFITS STRIP ========== */
+.lior-benefits {
+  background: #f9f6f1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.lior-benefits__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 140px;
+  flex: 1 1 160px;
+  max-width: 200px;
+}
+
+.lior-benefits__icon {
+  font-size: 2.2rem;
+}
+
+.lior-benefits__title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #2c2c2c;
+}
+
+.lior-benefits__desc {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* ========== 7. FOOTER AREA ========== */
+.lior-footer-area {
+  background: #ffffff;
+  padding: 50px 20px 30px;
+  border-top: 1px solid #eae5dc;
+}
+
+.lior-footer-area__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lior-footer-area__logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.lior-footer-area__logo-placeholder {
+  background: #f0ebe2;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #5c4e3d;
+  white-space: nowrap;
+}
+
+.lior-footer-area__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.lior-footer-area__input {
+  padding: 12px 16px;
+  border: 1px solid #d4ccc1;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  min-width: 180px;
+  transition: border-color 0.25s ease;
+  background: #fff;
+}
+
+.lior-footer-area__input:focus {
+  outline: none;
+  border-color: var(--primary, #A86C52);
+  box-shadow: 0 0 0 3px rgba(168, 108, 82, 0.15);
+}
+
+.lior-footer-area__submit {
+  background: var(--primary, #A86C52);
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.15s ease;
+  font-family: inherit;
+}
+
+.lior-footer-area__submit:hover {
+  background: #8b5a43;
+  transform: translateY(-1px);
+}
+
+.lior-footer-area__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.lior-footer-area__col {
+  min-width: 150px;
+  flex: 1 1 180px;
+}
+
+.lior-footer-area__col-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #2c2c2c;
+}
+
+.lior-footer-area__link {
+  display: block;
+  color: #5c4e3d;
+  text-decoration: none;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.lior-footer-area__link:hover {
+  color: var(--primary, #A86C52);
+}
+
+.lior-footer-area__text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .lior-hero__title {
+    font-size: 2rem;
+  }
+  .lior-hero__subtitle {
+    font-size: 1rem;
+  }
+  .lior-hero__icons {
+    gap: 12px;
+  }
+  .lior-hero__icon-item {
+    padding: 12px 14px;
+    min-width: 70px;
+  }
+  .lior-categories__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .lior-cat-card__img {
+    height: 200px;
+  }
+  .lior-videos__carousel {
+    gap: 14px;
+  }
+  .lior-video-card {
+    min-width: 220px;
+  }
+  .lior-banner {
+    height: 180px;
+  }
+  .lior-benefits {
+    gap: 20px;
+  }
+  .lior-footer-area__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .lior-footer-area__form {
+    width: 100%;
+    flex-direction: column;
+  }
+  .lior-footer-area__input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .lior-hero {
+    min-height: 380px;
+    padding: 40px 16px;
+  }
+  .lior-hero__title {
+    font-size: 1.6rem;
+  }
+  .lior-categories__grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .lior-cat-card__img {
+    height: 220px;
+  }
+  .lior-trust {
+    gap: 20px;
+    padding: 24px 12px;
+  }
+  .lior-benefits__item {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .lior-footer-area__bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
